@@ -13,9 +13,6 @@ class Solution {
 
     public int[][] spiralMatrix(int m, int n, ListNode head) {
         int[][] res=new int[m][n];
-        // for(int i[]:res){
-        //     Arrays.fill(i,-1);
-        // }
 
         int colStart=0;
         int rowStart=0;
