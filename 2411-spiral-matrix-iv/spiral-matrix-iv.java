@@ -50,7 +50,7 @@ class Solution {
 
             // right  to left
 
-            if(rowStart<rowEnd){
+            if(rowStart<=rowEnd){
             for(int i=colEnd;i>=colStart;i--){
                 int val=curr==null?-1:curr.val;
                 res[rowEnd][i]=val;
@@ -61,7 +61,7 @@ class Solution {
             }
             // bottom to top
 
-            if(colStart<colEnd){
+            if(colStart<=colEnd){
              for(int i=rowEnd;i>=rowStart;i--){
                 int val=curr==null?-1:curr.val;
                 res[i][colStart]=val;
