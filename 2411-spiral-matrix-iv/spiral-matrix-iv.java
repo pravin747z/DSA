@@ -13,9 +13,9 @@ class Solution {
 
     public int[][] spiralMatrix(int m, int n, ListNode head) {
         int[][] res=new int[m][n];
-        for(int i[]:res){
-            Arrays.fill(i,-1);
-        }
+        // for(int i[]:res){
+        //     Arrays.fill(i,-1);
+        // }
 
         int colStart=0;
         int rowStart=0;
@@ -25,7 +25,7 @@ class Solution {
 
         ListNode curr=head;
 
-        while(curr!=null){
+        while(rowStart<=rowEnd && colStart<=colEnd){
             // left to right
             for(int i=colStart;i<=colEnd;i++){
                 int val=curr==null?-1:curr.val;
