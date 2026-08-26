@@ -52,24 +52,15 @@ class Solution {
 
             sum+=curr;
 
-            if(sum>k){
+            if(sum>=k){
                 start=updateStart(start,sum,s,k);
-                sum--;
-            }else if(sum==k){
-                
-                start=updateStart(start,sum,s,k);
-
+                sum=k;
             }
 
             int len=i+1-start;
             int prevLen=res[1]-res[0];
 
 
-            if(i==5){
-                System.out.println("start is : "+start);
-                System.out.println("sum is : "+sum);
-                System.out.println("len is : "+len);
-            }
 
             if(len==k && sum==k){
                 res[0]=start;
@@ -98,7 +89,6 @@ class Solution {
         }
 
 
-        System.out.println(Arrays.toString(res));
 
         res[0]=Math.max(res[0],0);
         res[1]=Math.max(res[1],0);
