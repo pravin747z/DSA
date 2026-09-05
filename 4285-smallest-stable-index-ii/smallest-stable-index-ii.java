@@ -10,7 +10,6 @@ class Solution {
 
             
         }
-        System.out.println(Arrays.toString(min));
 
         int max=nums[0];
 
